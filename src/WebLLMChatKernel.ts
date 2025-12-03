@@ -20,8 +20,7 @@ export class WebLLMChatKernel {
   private model: ReturnType<typeof webLLM>;
 
   constructor(opts: WebLLMChatKernelOptions = {}) {
-    const globalModel =
-    typeof window !== "undefined" ? window.webllmModelId : undefined;
+    const globalModel = typeof window !== "undefined" ? window.webllmModelId : undefined;
 
     this.modelName = opts.model ?? globalModel ?? "Llama-3.2-3B-Instruct-q4f16_1-MLC";
     this.model = webLLM(this.modelName, {
