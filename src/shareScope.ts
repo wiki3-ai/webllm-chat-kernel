@@ -1,13 +1,13 @@
 let sharedScope: any = null;
 
 const MINIMUM_VERSIONS: Record<string, string> = {
-  "@jupyterlab/coreutils": "6.4.9",
-  "@jupyterlab/application": "4.4.9",
-  "@jupyterlab/ui-components": "4.4.9",
+  "@jupyterlab/coreutils": "6.4.5",
+  "@jupyterlab/application": "4.4.5",
+  "@jupyterlab/ui-components": "4.4.5",
   "@jupyterlab/services": "7.4.9",
-  "@jupyterlab/settingregistry": "4.4.9",
-  "@jupyterlab/notebook": "4.4.9",
-  "@jupyterlab/apputils": "4.5.9",
+  "@jupyterlab/settingregistry": "4.4.5",
+  "@jupyterlab/notebook": "4.4.5",
+  "@jupyterlab/apputils": "4.4.5",
 };
 
 export function setSharedScope(scope: any) {
